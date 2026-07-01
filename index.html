@@ -1406,7 +1406,7 @@ function showWithdrawModal() {
 
     // Populate saved banks dropdown
     var sel = document.getElementById('withdrawSavedBank');
-    sel.innerHTML = '<option value="">— Enter new bank details —</option>';
+    sel.innerHTML = '<option value="">Saved Bank Account</option>';
     (currentUserData.savedBanks||[]).forEach(function(b, i){
         var label = b.bankName+' — '+b.accountNumber+' ('+b.accountName+')';
         sel.innerHTML += '<option value="'+i+'">'+esc(label)+'</option>';
